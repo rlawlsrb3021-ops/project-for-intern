@@ -13,7 +13,7 @@ ProductionVolume', 'ProductionCost', 'SupplierQuality',
 'EnergyEfficiency', 'AdditiveProcessTime', 'AdditiveMaterialCost',
        '
 
-
+```text
 Manufacturing_Defect_Analysis
 │
 ├── README.md
