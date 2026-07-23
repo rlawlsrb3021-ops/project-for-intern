@@ -11,6 +11,13 @@ ProductionVolume', 'ProductionCost', 'SupplierQuality',
 'DowntimePercentage', 'InventoryTurnover', 'StockoutRate',
 'WorkerProductivity', 'SafetyIncidents', 'EnergyConsumption',
 'EnergyEfficiency', 'AdditiveProcessTime', 'AdditiveMaterialCost',
+
+
+결합률과 각 요인의 상관관계 확인
+
+결함률에 영향이 크다고 생각되는 요인 5가지 선별
+
+
        '
 
 ```text
