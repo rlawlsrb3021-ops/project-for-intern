@@ -13,6 +13,7 @@ featureimportance를 통해 어떤 변수의 영향이 큰지 예측 및 분석 
 dadta: Predictive Maintenance Dataset (AI4I 2020) 
 address: https://www.kaggle.com/datasets/stephanmatzka/predictive-maintenance-dataset-ai4i-2020/data
 데이터 수 :10000
+고장수:339
 예측 목표: failure
 0:정상
 1:고장
@@ -43,9 +44,14 @@ udi, product id, type은 공정에 관련 없다는 판단 하에 제거
 - ![Air Temperature Failure Rate](images/tool.png)
 
 공기온도는 6.9 퍼센트로 약 302.5도에서 304.5도 사이에서 
+
 공구사용시간은 16.8 퍼센트로 약 202.4에서 253분 사이에서 
+
 돌림 힘은 57퍼센트로 62 76.6 사이에서 
-회전 수는 57퍼센트로 
+
+회전 수는 86퍼센트로 2542 2886 사이에서
+
+공정 온도는 16퍼로 202.4 253 가장 높게 결함률이 나왔
 
 
 
