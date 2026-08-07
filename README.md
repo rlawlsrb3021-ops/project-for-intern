@@ -42,8 +42,10 @@ udi, product id, type은 공정에 관련 없다는 판단 하에 제거
 - Tool Wear
 - ![Air Temperature Failure Rate](images/tool.png)
 
-
-
+공기온도는 6.9 퍼센트로 약 302.5도에서 304.5도 사이에서 
+공구사용시간은 16.8 퍼센트로 약 202.4에서 253분 사이에서 
+돌림 힘은 57퍼센트로 62 76.6 사이에서 
+회전 수는 57퍼센트로 
 
 
 
