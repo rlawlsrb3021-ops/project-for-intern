@@ -28,7 +28,7 @@ udi, product id, type은 공정에 관련 없다는 판단 하에 제거
 
 분석 과정
 1. 각 공정 변수와 고장 발생 상관관계를 확인
-![Air Temperature Failure Rate](images/air)
+![Air Temperature Failure Rate](images/air.png)
 2. 각 변수를 여러 구간으로 나누어 구간별 고장률 비교
 
 - Air Temperature
