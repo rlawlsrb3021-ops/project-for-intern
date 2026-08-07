@@ -38,7 +38,7 @@ udi, product id, type은 공정에 관련 없다는 판단 하에 제거
 - Rotational Speed
 - ![Air Temperature Failure Rate](images/rot.png)
 - Torque
-- ![Air Temperature Failure Rate](images/.png)
+- ![Air Temperature Failure Rate](images/torque.png)
 - Tool Wear
 - ![Air Temperature Failure Rate](images/tool.png)
 
