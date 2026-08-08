@@ -43,15 +43,50 @@ udi, product id, type은 공정에 관련 없다는 판단 하에 제거
 - Tool Wear
 - ![Air Temperature Failure Rate](images/tool.png)
 
-공기온도는 6.9 퍼센트로 약 302.5도에서 304.5도 사이에서 
+공기온도는  약 302.5도에서 304.5도 사이에서 
 
-공구사용시간은 16.8 퍼센트로 약 202.4에서 253분 사이에서 
+공구사용시간은  약 202.4에서 253분 사이에서 
 
-돌림 힘은 57퍼센트로 62 76.6 사이에서 
+돌림 힘은  62 76.6 사이에서 
 
-회전 수는 86퍼센트로 2542 2886 사이에서
+회전 수는  2542 2886 사이에서
 
-공정 온도는 16퍼로 202.4 253 가장 높게 결함률이 나왔
+공정 온도는  202.4 253 가장 높게 고장 발생 횟수가 나왔다
+
+random forest classification
+
+각 변수의 복합적인 영향이 failure에 어떻게 미치는가를 random forest classification을 사용하여 알아본다
+
+input:5개 변수
+
+target:failure
+
+train/test split
+
+stratify=target을 사용하여 고장 수가 매우 작기 때문에 test/train에 들어갈 고장 정상 비율 유지
+또한 precision recall f1-score를 확인
+
+precision=0.77
+
+recall=0.59
+
+f1-score=0.67
+
+모델이 고장이라고 판명한 것 중에 진짜 고장 비율이 0.77
+
+실제 고장 중에 모델이 고장이라고 찾은 비율이 0.59
+
+해당 데이터로 학습한 모델이 높지 않은 정확도를 보여준다
+
+feature importance
+- ![Air Temperature Failure Rate](images/impor.png)
+feature importance로 이 모델에서 고장 발생하는 데에 가장 영향을 많이 준다고 판단한 변수는  torque 이다 
+
+하지만 torque  failure에 필연적으로 인과관계를 가진다고 판단하지 않는다
+
+결론
+
+
 
 
 
