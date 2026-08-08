@@ -27,10 +27,10 @@ address: https://www.kaggle.com/datasets/stephanmatzka/predictive-maintenance-da
 
 udi, product id, type은 공정에 관련 없다는 판단 하에 제거
 
-분석 과정
-1. 각 공정 변수와 고장 발생 상관관계를 확인
+3.분석 과정
+각 공정 변수와 고장 발생 상관관계를 확인
 ![Air Temperature Failure Rate](images/corr.png)
-2. 각 변수를 여러 구간으로 나누어 구간별 고장률 비교
+각 변수를 여러 구간으로 나누어 구간별 고장률 비교
 
 - Air Temperature
 - ![Air Temperature Failure Rate](images/air.png)
@@ -55,7 +55,7 @@ udi, product id, type은 공정에 관련 없다는 판단 하에 제거
 
 random forest classification
 
-각 변수의 복합적인 영향이 failure에 어떻게 미치는가를 random forest classification을 사용하여 알아본다
+4.각 변수의 복합적인 영향이 failure에 어떻게 미치는가를 random forest classification을 사용하여 알아본다
 
 input:5개 변수
 
@@ -84,10 +84,25 @@ feature importance로 이 모델에서 고장 발생하는 데에 가장 영향�
 
 하지만 torque  failure에 필연적으로 인과관계를 가진다고 판단하지 않는다
 
-결론
+5.결론
 
-개별 변수에 따른 고장 발생 수 비교 결과
+개별 변수 구간에 따른 고장 발생 수 비교 결과  
+
+높은 구간에서만 또는 낮은 구간에서 만에서 고장 발생 횟수가 높다고 할 수 없으며 또한 적정 구간이 있다고 판단이 가능
+
+각 변수가 복합적으로 고장에 영향을 어떻게 미칠까 알기 위해 random forest를 사용한 결과 torque가 상대적으로 중요한 변수로 나타났다
+
+전체 셈플에 비해 target 셈플이 적기 때문에 recall과 precision을 사용하였지만 높지 않은 값으로 인해 실질적으로 예측하는데 어느정도 한계가 있다
+
+따라서 본 분석에서 특정 변수에서 각 구간에 따른 발생 횟수 분석과 주어진 데이터로 5개의 변수의 상대적 중요도와 failure분류할 수 있는 가능성에 대해 생각할 수 있는 데 의의를 두었다
 
 
+6.한계점 
+
+전체 셈플 중에 고장 수가 적어 고장여부를 판단하는 학습을 하는 것에 한계가 있다
+
+feature importance로 판단한 변수가 기여도를 나타내지만 실제 인과관계를 나타내지 않는다
+
+해당 데이터는 실제 수집 데이터가 아닌 Synthetic Dataset이다
 
        
