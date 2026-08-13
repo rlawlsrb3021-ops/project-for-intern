@@ -20,19 +20,21 @@ address: https://www.kaggle.com/datasets/stephanmatzka/predictive-maintenance-da
 1:고장
 
 변수
+- type
 - Air Temperature [K]
 - Process Temperature [K]
 - Rotational Speed [rpm]
 - Torque [Nm]
 - Tool Wear [min]
 
-udi, product id, type은 공정에 관련 없다는 판단 하에 제거
+udi, product id는 공정에 관련 없다는 판단 하에 제거
 
 3.분석 과정
 각 공정 변수와 고장 발생 상관관계를 확인
 ![Air Temperature Failure Rate](images/corr.png)
 각 변수를 여러 구간으로 나누어 구간별 고장률 비교
-
+-type
+- ![Air Temperature Failure Rate](images/air.png)
 - Air Temperature
 - ![Air Temperature Failure Rate](images/air.png)
 - Process Temperature
