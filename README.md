@@ -3,6 +3,7 @@
 
 밀링 머신 공정 관련 데이터 Predictive Maintenance Dataset (AI4I 2020)를 분석하여 
 각 공정 조건과 기계 failure 발생 관계에 대해 분석 하였다
+failure은 모든 종류를 통틀어서 합쳐서 두었다
 
 
 각 변수 구간별 failure 발생률을 확인하고
