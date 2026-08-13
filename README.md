@@ -34,7 +34,7 @@ udi, product id는 공정에 관련 없다는 판단 하에 제거
 ![Air Temperature Failure Rate](images/corr.png)
 각 변수를 여러 구간으로 나누어 구간별 고장률 비교
 -type
-- ![Air Temperature Failure Rate](images/air.png)
+- ![Air Temperature Failure Rate](images/type.png)
 - Air Temperature
 - ![Air Temperature Failure Rate](images/air.png)
 - Process Temperature
@@ -82,7 +82,7 @@ f1-score=0.67
 해당 데이터로 학습한 모델이 높지 않은 정확도를 보여준다
 
 feature importance
-- ![Air Temperature Failure Rate](images/impor.png)
+- ![Air Temperature Failure Rate](images/importance.png)
 feature importance로 이 모델에서 고장 발생하는 데에 가장 영향을 많이 준다고 판단한 변수는  torque 이다 
 
 하지만 torque  failure에 필연적으로 인과관계를 가진다고 판단하지 않는다
