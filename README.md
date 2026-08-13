@@ -75,9 +75,9 @@ train/test split
 stratify=target을 사용하여 고장 수가 매우 작기 때문에 test/train에 들어갈 고장 정상 비율 유지
 또한 precision recall f1-score를 확인
 
-precision=0.77
+precision=0.83
 
-recall=0.59
+recall=0.56
 
 f1-score=0.67
 
@@ -103,7 +103,7 @@ feature importance로 이 모델에서 고장 발생하는 데에 가장 영향�
 
 각 변수가 복합적으로 고장에 영향을 어떻게 미칠까 알기 위해 random forest를 사용한 결과 torque가 상대적으로 중요한 변수로 나타났다
 
-전체 셈플에 비해 target 셈플이 적기 때문에 recall과 precision을 사용하였지만 높지 않은 값으로 인해 실질적으로 예측하는데 어느정도 한계가 있다
+전체 셈플에 비해 target 셈플이 적기 때문에 recall과 precision을 사용하였지만 recall이 높지 않은 값으로 인해 실질적으로 예측하는데 어느정도 한계가 있다
 
 따라서 본 분석에서 특정 변수에서 각 구간에 따른 발생 횟수 분석과 주어진 데이터로 5개의 변수의 상대적 중요도와 failure분류할 수 있는 가능성에 대해 생각할 수 있는 데 의의를 두었다
 
