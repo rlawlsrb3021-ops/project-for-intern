@@ -32,9 +32,14 @@ udi, product id는 공정에 관련 없다는 판단 하에 제거
 3.분석 과정
 각 공정 변수와 고장 발생 상관관계를 확인
 ![Air Temperature Failure Rate](images/corr.png)
-각 변수를 여러 구간으로 나누어 구간별 고장률 비교
+각 타입별 고장률 비교
 -type
 - ![Air Temperature Failure Rate](images/type.png)
+
+  L타입에서 가장 결합률이 크게 나온다
+
+타입 분석에서 결합률로 한 이유는 타입별 셈플 수가 다르기 때문에 비율로 하였다
+각 변수를 여러 구간으로 나누어 구간별 고장수 비교
 - Air Temperature
 - ![Air Temperature Failure Rate](images/air.png)
 - Process Temperature
@@ -92,6 +97,8 @@ feature importance로 이 모델에서 고장 발생하는 데에 가장 영향�
 개별 변수 구간에 따른 고장 발생 수 비교 결과  
 
 높은 구간에서만 또는 낮은 구간에서 만에서 고장 발생 횟수가 높다고 할 수 없으며 또한 적정 구간이 있다고 판단이 가능
+
+타입 별 고장에 영향을 주는 것은 각 타입별 차이가 미미함
 
 각 변수가 복합적으로 고장에 영향을 어떻게 미칠까 알기 위해 random forest를 사용한 결과 torque가 상대적으로 중요한 변수로 나타났다
 
