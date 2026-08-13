@@ -39,6 +39,7 @@ udi, product id는 공정에 관련 없다는 판단 하에 제거
   L타입에서 가장 결합률이 크게 나온다
 
 타입 분석에서 결합률로 한 이유는 타입별 셈플 수가 다르기 때문에 비율로 하였다
+
 각 변수를 여러 구간으로 나누어 구간별 고장수 비교
 - Air Temperature
 - ![Air Temperature Failure Rate](images/air.png)
